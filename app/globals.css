@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* ── Fix global: elimina el outline al hacer clic con mouse ─────────────
+   :focus-visible solo activa estilos cuando se navega con TECLADO
+   Al hacer clic con mouse, :focus-visible NO se activa → sin anillo visible
+   Esto es el estándar moderno de accesibilidad (WCAG 2.1)
+─────────────────────────────────────────────────────────────────────── */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ── Smooth scroll global ──────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── Scrollbar sutil ───────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 3px; }
