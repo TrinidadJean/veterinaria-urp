@@ -61,11 +61,11 @@ export const team: TeamMember[] = [
     photo: 'dr-tassi.webp',
   },
   {
-    slug: 'mv-franchesca-tassi',
-    name: 'M.V. Franchesca Tassi',
+    slug: 'mv-francesca-tassi',
+    name: 'M.V. Francesca Tassi',
     role: 'Médico Veterinario',
-    specialty: 'Medicina General · Anestesiología',
-    specialties: ['Medicina General', 'Anestesiología'],
+    specialty: 'Medicina General · Endocrinologia',
+    specialties: ['Medicina General', 'Endocrinologia'],
     schedule: [
       { day: D.LUN, morning: true, afternoon: true },
       { day: D.MAR, morning: false, afternoon: true },

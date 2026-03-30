@@ -88,7 +88,7 @@ const clinicSchema = {
   url: siteConfig.url,
   telephone: siteConfig.phone,
   image: { '@type': 'ImageObject', url: siteConfig.ogImage, width: 1200, height: 630 },
-  logo: { '@type': 'ImageObject', url: `${siteConfig.url}/images/logo/logo.svg` },
+  logo: { '@type': 'ImageObject', url: `${siteConfig.url}/images/logo/logo.webp` },
   address: {
     '@type': 'PostalAddress',
     streetAddress: siteConfig.address.street,
@@ -128,7 +128,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="dns-prefetch" href="//api.whatsapp.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/images/logo/logo.svg" type="image/svg+xml" />
+        <link rel="icon" href="/images/logo/logo.webp" type="image/webp" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <script
           type="application/ld+json"
